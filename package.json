@@ -1,0 +1,22 @@
+{
+  "name": "functions-test",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro build && wrangler pages dev",
+    "astro": "astro",
+    "deploy": "astro build && wrangler pages deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^11.0.5",
+    "astro": "^4.15.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240919.0",
+    "wrangler": "^3.78.7"
+  }
+}
